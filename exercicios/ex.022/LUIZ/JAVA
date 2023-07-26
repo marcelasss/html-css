@@ -1,0 +1,24 @@
+import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
+import java.util.Arrays;
+
+public class TemperaturaSensor {
+    private double[][] leituras = new double[48][7]; // 48 meias horas x 7 dias
+
+    public void adicionarLeitura(double valor, LocalDateTime horario) {
+        long horasDecorridas = ChronoUnit.HOURS.between(LocalDateTime.MIN, horario); // contagem de horas desde o início do tempo
+        int linha = (int) (horasDecorridas * 2); // a cada meia hora
+        int dia = horario.getDayOfWeek().getValue() - 1; // 0 (segunda-feira) até 6 (domingo)
+        leituras[linha][dia] = valor;
+    }
+
+    public double[][] getLeiturasOrdenadas() {
+        double[][] leiturasOrdenadas = Arrays.copyOf(leituras, leituras.length);
+
+        for (int dia = 0; dia < 7; dia++) {
+            Arrays.sort(leiturasOrdenadas, (a, b) -> Double.compare(a[dia], b[dia]));
+        }
+
+        return leiturasOrdenadas;
+    }
+}
