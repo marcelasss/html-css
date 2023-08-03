@@ -22,7 +22,7 @@ html, body{
 }
 
 header{
-    background-color: #8C583A;
+    background-color:#502000;
     color: white;
     text-align: center;
 }
@@ -57,27 +57,48 @@ section {
     font-size: 3.5vh;
 }
 
+section > p {
+    padding-bottom: 2em;
+
+}
+
 
 section.normal{
     background-color:white ;
     color: black;
 }
 
-section.imagem{
-    background-color:#BF9B7A ;
-    color:white;
+section.imagem {
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.774) ;
+    background-attachment: fixed;
+    background-color:black ;
+    color:white
+    
 }
 
 section.imagem > p{
     display: inline-block;
     padding: 5px;
-    background-color: #8c583a79;
+    background-color:  #5020008e;
+    text-shadow: 1px 1px 0px black;
+ }
+
+section#img01 {
+background-image: url('../imagens/backgroundimg02\(3\).jpg');
+background-position: center center;
+background-size: cover;
+
+}
+
+section#img02 {
+background-image: url('../imagens/backgroundimg01\(2\).jpg');
+background-size: cover;
 
 }
 
 
 footer {
-    background-color:#8C583A ;
+    background-color:#502000 ;
     color: white;
     text-align: center;
     padding: 10px;
