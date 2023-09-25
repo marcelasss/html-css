@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercícios deTabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        .cinza{
+            background-color:rgba(238, 237, 233, 0.712)
+        }
+
+        
+      
+    </style>
+</head>
+<body>
+    <h1> Exercícios de Tabelas</h1>
+
+    <table>
+        <colgroup>
+            <col class="cinza" span="4">
+            
+        </colgroup>
+
+        <caption>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Dentista</td>
+            </tr>
+            <tr>
+                <td>Luis Paulo</td>
+                <td>M</td>
+                <td>30</td>
+                <td>Contador</td>
+            </tr>
+            <tr>
+                <td>Maria Luiza</td>
+                <td>F</td>
+                <td>28</td>
+                <td>Recrutadora</td>
+            </tr>
+            <tr>
+                <td>Rodrigo</td>
+                <td>M</td>
+                <td>27</td>
+                <td>Enfermeiro</td>
+            </tr>
+            <tr>
+                <td>Marcelo</td>
+                <td>M</td>
+                <td>26</td>
+                <td>Personal</td>
+            </tr>
+            <tr>
+                <td>Mônica</td>
+                <td>F</td>
+                <td>35</td>
+                <td>Vendedora</td>
+            </tr>
+        </caption>
+    </table>
+</body>
+</html>
